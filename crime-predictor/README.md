@@ -6,15 +6,15 @@ A full-stack crime prediction application using **Machine Learning + MERN stack 
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                   Docker Compose                     │
-│                                                      │
+│                   Docker Compose                    │
+│                                                     │
 │  ┌──────────────┐    ┌──────────────────────────┐   │
 │  │   Frontend   │    │        Backend           │   │
-│  │  React +     │───▶│  Node.js + Express +     │   │
+│  │  React +     │───▶│  Node.js + Express +    │   │
 │  │  Recharts    │    │  Mongoose + JWT Auth     │   │
 │  │  Port: 3000  │    │  Port: 5001              │   │
 │  └──────────────┘    └───────────┬──────────────┘   │
-│                                  │                   │
+│                                  │                  │
 │          ┌───────────────────────┼──────────────┐   │
 │          ▼                       ▼              │   │
 │  ┌──────────────┐    ┌──────────────────────┐   │   │
@@ -87,12 +87,12 @@ docker compose up --build -d
 
 ### Access the App
 
-| Service    | URL                        |
-|------------|----------------------------|
-| Frontend   | http://localhost:3000      |
-| Backend    | http://localhost:5001      |
-| ML Service | http://localhost:5000      |
-| MongoDB    | mongodb://localhost:27017  |
+| Service    | URL                           |
+|------------|-------------------------------|
+| Frontend   | http://localhost:3000         |
+| Backend    | http://localhost:5001/health  |
+| ML Service | http://localhost:5000/health  |
+| MongoDB    | mongodb://localhost:27017     |
 
 ## 🧠 Machine Learning
 
